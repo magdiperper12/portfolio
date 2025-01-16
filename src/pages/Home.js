@@ -24,21 +24,34 @@ function Home() {
 				className={`absolute cursor-pointer -start-6 top-1/4 flex flex-col gap-4 py-3 -mt-20 px-2 rounded-full shadow-lg ${
 					darkMode ? 'bg-gray-700 text-blue-300' : 'bg-white text-blue-600'
 				}`}>
-				<FontAwesomeIcon
-					icon={faFacebook}
-					className='text-2xl md:text-3xl transition-colors duration-300'
-					title='Facebook'
-				/>
-				<FontAwesomeIcon
-					icon={faInstagram}
-					className='text-2xl md:text-3xl transition-colors duration-300'
-					title='Instagram'
-				/>
-				<FontAwesomeIcon
-					icon={faLinkedin}
-					className='text-2xl md:text-3xl transition-colors duration-300'
-					title='Linkedin'
-				/>
+				<a
+					href='https://web.facebook.com/magdi.perper.9 '
+					target='blank'>
+					<FontAwesomeIcon
+						icon={faFacebook}
+						className='text-2xl md:text-3xl transition-colors duration-300'
+						title='Facebook'
+					/>
+				</a>
+				<a
+					href='https://www.instagram.com/magdiperper4/ '
+					target='blank'>
+					<FontAwesomeIcon
+						icon={faInstagram}
+						className='text-2xl md:text-3xl transition-colors duration-300'
+						title='Instagram'
+					/>
+				</a>
+				<a
+					href='https://web.facebook.com/magdi.perper.9 '
+					target='blank'>
+					<FontAwesomeIcon
+						icon={faLinkedin}
+						className='text-2xl md:text-3xl transition-colors duration-300'
+						title='Linkedin'
+					/>
+				</a>
+
 				<Link to='/Contact'>
 					<FontAwesomeIcon
 						icon={faCircleChevronDown}
@@ -53,7 +66,7 @@ function Home() {
 				} mx-auto`}>
 				<div className='relative pt-36 lg:pt-0'>
 					<h1
-						className={`text-white font-semibold p-7 bg-gray-700 rounded-xl   lg:ps-80 text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold mb-5`}>
+						className={`text-white p-7 bg-gray-700 rounded-xl   lg:ps-80 text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold mb-5`}>
 						Hi, I'm Magdi. I teach people how to make the web and how to make it
 						look good while they're at it.
 					</h1>

@@ -12,17 +12,30 @@ function Projects() {
 			text: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally',
 		},
 		{
+			project: 'Football-Historic',
+			image: 'https://historic.vercel.app/component/Chat/Social',
+			url: 'https://historic.vercel.app/component/Chat/Social',
+			text: 'by using next js , api , tailwind and typescript make this website have all information about football whith ai chating and fan zone and historic of all football club and player and you can see also place for shopping ',
+		},
+		{
+			project: 'Social Media',
+			image: 'https://social-midea.vercel.app/',
+			url: 'https://social-midea.vercel.app/',
+			text: 'by using next js , tailwind  and typescript make this website are a social media website that have all the feature of social media like post , comment , like  and followin  also have notification and stories ',
+		},
+		{
+			project: 'E-commerce',
+			image: 'https://e-commerce-h3ex0he57-magdis-projects.vercel.app/',
+			url: 'https://e-commerce-h3ex0he57-magdis-projects.vercel.app/',
+			text: 'by using next js , tailwind ,api  and typescript make this website are a e-commerce website that have all the feature of e-commerce like cart, payement,product and and shopping place ',
+		},
+		{
 			project: 'point-cursure',
 			image: 'https://point-cursure.surge.sh/',
 			url: 'https://point-cursure.surge.sh/',
 			text: 'by using html and css , vanilla javascript and react  making a point-cursure having animation and cursor effect',
 		},
-		{
-			project: 'Football-Historic',
-			image: 'https://history-football-ge7w.vercel.app/',
-			url: 'https://history-football-ge7w.vercel.app/',
-			text: 'by using next js and tailwind and typescript make this website have information about football ',
-		},
+
 		{
 			project: 'gallary-slide',
 			image: 'https://gallary-slide.surge.sh/',
