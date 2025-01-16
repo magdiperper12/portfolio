@@ -43,7 +43,7 @@ function Home() {
 					/>
 				</a>
 				<a
-					href='https://web.facebook.com/magdi.perper.9 '
+					href='https://www.linkedin.com/in/magdi-perper-95b132343/'
 					target='blank'>
 					<FontAwesomeIcon
 						icon={faLinkedin}
