@@ -53,18 +53,26 @@ function Contact() {
 			} text-center`}>
 			<h2 className='text-4xl sm:text-5xl font-semibold mb-12'>Contact Me</h2>
 
-			<div className='grid sm:grid-cols-1 lg:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-white dark:bg-gray-800 shadow-lg rounded-xl'>
+			<div
+				className={`grid sm:grid-cols-1 lg:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl ${
+					darkMode ? 'bg-gray-800 text-gray-50' : 'bg-slate-50 text-slate-700'
+				}  shadow-lg rounded-xl`}>
 				<div>
-					<h1 className='text-gray-800 dark:text-gray-100 text-3xl font-extrabold'>
+					<h1
+						className={`text-gray-800 dark:text-gray-100 ${
+							darkMode
+								? 'bg-gray-800 text-gray-50'
+								: 'bg-slate-50 text-slate-700'
+						} text-3xl font-extrabold`}>
 						Let's Talk
 					</h1>
-					<p className='text-sm text-gray-500 dark:text-gray-300 mt-4'>
+					<p className='text-sm text-gray-400 dark:text-gray-300 mt-4'>
 						Have some big idea or brand to develop and need help? Reach out,
 						we'd love to hear about your project and provide help.
 					</p>
 
 					<div className='mt-12'>
-						<h2 className='text-gray-800 dark:text-gray-100 text-base font-bold'>
+						<h2 className='text-gray-400 dark:text-gray-100 text-base font-bold'>
 							Socials
 						</h2>
 
@@ -90,25 +98,41 @@ function Contact() {
 					<input
 						type='text'
 						placeholder='Name'
-						className='w-full text-gray-800 dark:text-gray-100 rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500'
+						className={`w-full ${
+							darkMode
+								? 'bg-gray-800 text-gray-50'
+								: 'bg-slate-50 text-slate-700'
+						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}
 					/>
 					<input
 						type='email'
 						placeholder='Email'
-						className='w-full text-gray-800 dark:text-gray-100 rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500'
+						className={`w-full ${
+							darkMode
+								? 'bg-gray-800 text-gray-50'
+								: 'bg-slate-50 text-slate-700'
+						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}
 					/>
 					<input
 						type='text'
 						placeholder='Subject'
-						className='w-full text-gray-800 dark:text-gray-100 rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500'
+						className={`w-full ${
+							darkMode
+								? 'bg-gray-800 text-gray-50'
+								: 'bg-slate-50 text-slate-700'
+						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}
 					/>
 					<textarea
 						placeholder='Message'
 						rows='6'
-						className='w-full text-gray-800 dark:text-gray-100 rounded-md px-4 border border-gray-300 dark:border-gray-600 text-sm pt-2.5 outline-none focus:ring-2 focus:ring-blue-500'></textarea>
+						className={`w-full ${
+							darkMode
+								? 'bg-gray-800 text-gray-50'
+								: 'bg-slate-50 text-slate-700'
+						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}></textarea>
 					<button
 						type='button'
-						className='w-full text-white bg-blue-500 hover:bg-blue-600 rounded-md text-sm py-3 transition duration-200'>
+						className={`w-full bg-blue-800 text-gray-50 rounded-md py-2.5 px-4   dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}>
 						Send
 					</button>
 				</form>

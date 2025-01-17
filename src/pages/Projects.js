@@ -13,8 +13,8 @@ function Projects() {
 		},
 		{
 			project: 'Football-Historic',
-			image: 'https://historic.vercel.app/component/Chat/Social',
-			url: 'https://historic.vercel.app/component/Chat/Social',
+			image: 'https://historic.vercel.app',
+			url: 'https://historic.vercel.app',
 			text: 'by using next js , api , tailwind and typescript make this website have all information about football whith ai chating and fan zone and historic of all football club and player and you can see also place for shopping ',
 		},
 		{
@@ -25,7 +25,7 @@ function Projects() {
 		},
 		{
 			project: 'E-commerce',
-			image: 'https://e-commerce-h3ex0he57-magdis-projects.vercel.app/',
+			image: 'https://historic.vercel.app/component/shop',
 			url: 'https://e-commerce-h3ex0he57-magdis-projects.vercel.app/',
 			text: 'by using next js , tailwind ,api  and typescript make this website are a e-commerce website that have all the feature of e-commerce like cart, payement,product and and shopping place ',
 		},
