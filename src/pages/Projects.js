@@ -1,5 +1,8 @@
 import React from 'react';
 import { useDarkMode } from '../DarkModeContext';
+// import { IoMdEye } from 'react-icons/io';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 function Projects() {
 	const { darkMode } = useDarkMode();
@@ -9,7 +12,7 @@ function Projects() {
 			project: 'chat-bot',
 			image: 'https://bat-chat.surge.sh/',
 			url: 'https://bat-chat.surge.sh/',
-			text: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally',
+			text: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks,Getsby , Hostinger, etc & used by thousands of developers globally  ',
 		},
 		{
 			project: 'Football-Historic',
@@ -35,7 +38,12 @@ function Projects() {
 			url: 'https://point-cursure.surge.sh/',
 			text: 'by using html and css , vanilla javascript and react  making a point-cursure having animation and cursor effect',
 		},
-
+		{
+			project: 'batslide',
+			image: 'https://batslide.surge.sh/',
+			url: 'https://batslide.surge.sh/',
+			text: 'by using html , css , vanilla javascript and react making a bat-slide with background image open on scrolling',
+		},
 		{
 			project: 'gallary-slide',
 			image: 'https://gallary-slide.surge.sh/',
@@ -66,12 +74,7 @@ function Projects() {
 			url: 'https://chart-api-geo.surge.sh/',
 			text: 'by using html and css , vanilla javascript making a chart-api-geo',
 		},
-		{
-			project: 'batslide',
-			image: 'https://batslide.surge.sh/',
-			url: 'https://batslide.surge.sh/',
-			text: 'by using html , css , vanilla javascript and react making a bat-slide with background image open on scrolling',
-		},
+
 		{
 			project: 'vanilla-js-calculator',
 			image: 'https://vanilla-javascript-calc.surge.sh/',
@@ -148,25 +151,25 @@ function Projects() {
 				Here you will find some of the personal and client projects that I
 				created, with each project containing its own case study.
 			</p>
-			<div className='grid grid-cols-1 gap-y-16 md:gap-8'>
+			<div className='grid md:grid-cols-2 grid-col-1 p-4 gap-y-16 md:gap-8'>
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className={`grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-lg ${
+						className={`grid grid-cols-1  gap-5  rounded-lg ${
 							darkMode
-								? 'text-white shadow-slate-800'
-								: 'text-slate-800 shadow-slate-200'
-						} transition duration-300 flex items-center`}>
+								? 'text-white shadow-slate-800 bg-gray-800'
+								: 'text-slate-800 shadow-slate-200 bg-blue-50'
+						} transition duration-300 flex items-center rounded-lg overflow-hidden`}>
 						<div className='w-full'>
 							<iframe
 								src={project.image}
-								className='w-full mx-auto transform rotate-12 scale-90 transition-transform duration-500 hover:rotate-0 hover:scale-100 h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden'
+								className='w-full mx-auto transform   transition-transform duration-500 hover:rotate-0 hover:scale-100  overflow-hidden'
 								title='project-iframe'
 								scrolling='no'></iframe>
 						</div>
 
-						<div className='text-start pt-6 sm:pt-10 ps-6 md:ps-16'>
-							<h1 className='text-lg md:text-xl font-semibold mb-6 animate-bounce flex justify-center items-center mb-8'>
+						<div className='text-start p-4 pb-7 '>
+							<h1 className='text-lg md:text-xl font-semibold  animate-bounce flex justify-center items-center mb-8'>
 								<span className='w-2 h-5 bg-blue-600 absolute start-0'></span>
 								<span className='absolute start-5'>{project.project}</span>
 							</h1>
@@ -180,7 +183,12 @@ function Projects() {
 										: 'bg-blue-700 text-white hover:bg-blue-800'
 								}`}
 								rel='noreferrer'>
-								{'See this website'}
+								Live{' '}
+								<FontAwesomeIcon
+									icon={faFacebook}
+									className='text-2xl md:text-3xl transition-colors duration-300'
+									title='Facebook'
+								/>
 							</a>
 						</div>
 					</div>

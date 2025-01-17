@@ -80,6 +80,14 @@ function Home() {
 						fun as possible. Whether you're trying to learn what you need to
 						tweak your small business' website or you're looking to jump start a
 						new career, I'm here to help.
+						<div>
+							<a
+								href='https://drive.google.com/open?id=1esvR9c9E2tTyqudjyCEijZikUq77op2E&authuser=0'
+								target='blank'
+								className='text-blue-500'>
+								Resume
+							</a>
+						</div>
 					</p>
 					<div className='absolute start-1/6 md:start-1/4 lg:start-0 shadow-lg shadow-gray-700 -top-0  md:-top-24 lg:top-16 rounded-full overflow-hidden w-44 h-44  md:w-72 md:h-72 lg:w-80 lg:h-80'>
 						<img
