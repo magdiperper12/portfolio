@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faFacebook,
@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope as faEnvelopeSolid } from '@fortawesome/free-solid-svg-icons';
 import { useDarkMode } from '../DarkModeContext'; // Adjust the import path as needed
+import { FiSend } from 'react-icons/fi';
 
 function Contact() {
 	const { darkMode } = useDarkMode();
@@ -46,6 +47,10 @@ function Contact() {
 		},
 	];
 
+	const [showAlert, setShowAlert] = useState(false);
+	const reload = () => {
+		window.location.reload();
+	};
 	return (
 		<section
 			className={`flex container flex-col items-center py-24 px-6 sm:px-10 ${
@@ -94,9 +99,15 @@ function Contact() {
 					</div>
 				</div>
 
-				<form className='space-y-4'>
+				<form
+					className='space-y-4'
+					onSubmit={(e) => {
+						e.preventDefault(); // Prevent default form submission
+						setShowAlert(true); // Show the custom alert
+					}}>
 					<input
 						type='text'
+						required
 						placeholder='Name'
 						className={`w-full ${
 							darkMode
@@ -107,23 +118,17 @@ function Contact() {
 					<input
 						type='email'
 						placeholder='Email'
+						required
 						className={`w-full ${
 							darkMode
 								? 'bg-gray-800 text-gray-50'
 								: 'bg-slate-50 text-slate-700'
 						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}
 					/>
-					<input
-						type='text'
-						placeholder='Subject'
-						className={`w-full ${
-							darkMode
-								? 'bg-gray-800 text-gray-50'
-								: 'bg-slate-50 text-slate-700'
-						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}
-					/>
+
 					<textarea
 						placeholder='Message'
+						required
 						rows='6'
 						className={`w-full ${
 							darkMode
@@ -131,10 +136,23 @@ function Contact() {
 								: 'bg-slate-50 text-slate-700'
 						} rounded-md py-2.5 px-4 border border-gray-300 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}></textarea>
 					<button
-						type='button'
-						className={`w-full bg-blue-800 text-gray-50 rounded-md py-2.5 px-4   dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}>
-						Send
+						type='submit'
+						className={`w-full flex justify-center items-center gap-3 bg-blue-600  text-gray-50 rounded-md py-2.5 px-4 dark:border-gray-600 text-sm outline-none focus:ring-2 focus:ring-blue-500`}>
+						Send <FiSend />
 					</button>
+					{showAlert && (
+						<div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-70'>
+							<div className='bg-white px-10 py-8 rounded shadow-lg'>
+								<p className='text-gray-700 mb-7'>codingmagdi@gmail.com</p>
+								<p className='text-gray-900'>Your Mail Delivered!</p>
+								<button
+									onClick={() => setShowAlert(false) & reload()}
+									className='mt-4 px-8 py-2 bg-red-500 text-white rounded-xl'>
+									Close
+								</button>
+							</div>
+						</div>
+					)}
 				</form>
 			</div>
 		</section>
