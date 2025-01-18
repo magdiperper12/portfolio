@@ -1,8 +1,6 @@
 import React from 'react';
 import { useDarkMode } from '../DarkModeContext';
-// import { IoMdEye } from 'react-icons/io';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { FaEye, FaGithub } from 'react-icons/fa';
 
 function Projects() {
 	const { darkMode } = useDarkMode();
@@ -151,19 +149,19 @@ function Projects() {
 				Here you will find some of the personal and client projects that I
 				created, with each project containing its own case study.
 			</p>
-			<div className='grid md:grid-cols-2 grid-col-1 p-4 gap-y-16 md:gap-8'>
+			<div className='grid md:grid-cols-1 grid-col-1 p-4 gap-y-28'>
 				{projects.map((project, index) => (
 					<div
 						key={index}
-						className={`grid grid-cols-1  gap-5  rounded-lg ${
+						className={`grid grid-cols-1 shadow-lg  gap-5  rounded-lg ${
 							darkMode
 								? 'text-white shadow-slate-800 bg-gray-800'
 								: 'text-slate-800 shadow-slate-200 bg-blue-50'
 						} transition duration-300 flex items-center rounded-lg overflow-hidden`}>
-						<div className='w-full'>
+						<div className='relative w-full h-full md:h-96 overflow-hidden'>
 							<iframe
 								src={project.image}
-								className='w-full mx-auto transform   transition-transform duration-500 hover:rotate-0 hover:scale-100  overflow-hidden'
+								className='w-full h-full transform origin-top-left '
 								title='project-iframe'
 								scrolling='no'></iframe>
 						</div>
@@ -173,23 +171,36 @@ function Projects() {
 								<span className='w-2 h-5 bg-blue-600 absolute start-0'></span>
 								<span className='absolute start-5'>{project.project}</span>
 							</h1>
-							<p className='text-base md:text-xl mb-6'>{project.text}</p>
-							<a
-								href={project.url}
-								target='_blank'
-								className={`text-sm sm:text-lg md:text-xl font-semibold py-4 px-8 rounded-lg duration-300 ${
-									darkMode
-										? 'bg-slate-300 text-slate-700 hover:bg-slate-100'
-										: 'bg-blue-700 text-white hover:bg-blue-800'
-								}`}
-								rel='noreferrer'>
-								Live{' '}
-								<FontAwesomeIcon
-									icon={faFacebook}
-									className='text-2xl md:text-3xl transition-colors duration-300'
-									title='Facebook'
-								/>
-							</a>
+							<p
+								className={`text-base md:text-lg mb-6 text-gray-400 ${
+									darkMode ? 'text-gray-200' : 'text-gray-800'
+								}`}>
+								{project.text}
+							</p>
+							<div className='flex justify-center items-center gap-8'>
+								<a
+									href={project.url}
+									target='_blank'
+									className={`text-sm sm:text-lg flex justify-start items-center md:text-lg font-semibold gap-2 py-2 px-7 rounded-lg duration-300 ${
+										darkMode
+											? 'border-slate-20 border-2 text-gray-20 hover:bg-slate-950'
+											: 'border-blue-500 border-2 text-blue-500 hover:bg-blue-500 hover:text-white'
+									}`}
+									rel='noreferrer'>
+									Live <FaEye />
+								</a>
+								<a
+									href={project.url}
+									target='_blank'
+									className={`text-sm sm:text-lg flex justify-start items-center md:text-lg font-semibold gap-2 py-2 px-7 rounded-lg duration-300 ${
+										darkMode
+											? 'border-slate-20 border-2 text-gray-20 hover:bg-slate-950'
+											: 'border-blue-500 border-2 text-blue-500  hover:bg-blue-500 hover:text-white'
+									}`}
+									rel='noreferrer'>
+									Github <FaGithub />
+								</a>
+							</div>
 						</div>
 					</div>
 				))}

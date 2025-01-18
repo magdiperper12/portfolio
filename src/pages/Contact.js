@@ -64,14 +64,15 @@ function Contact() {
 				}  shadow-lg rounded-xl`}>
 				<div>
 					<h1
-						className={`text-gray-800 dark:text-gray-100 ${
-							darkMode
-								? 'bg-gray-800 text-gray-50'
-								: 'bg-slate-50 text-slate-700'
+						className={` ${
+							darkMode ? ' text-gray-50' : ' text-slate-700'
 						} text-3xl font-extrabold`}>
 						Let's Talk
 					</h1>
-					<p className='text-sm text-gray-400 dark:text-gray-300 mt-4'>
+					<p
+						className={`text-sm ${
+							darkMode ? ' text-gray-50' : ' text-slate-700'
+						}  mt-4`}>
 						Have some big idea or brand to develop and need help? Reach out,
 						we'd love to hear about your project and provide help.
 					</p>
