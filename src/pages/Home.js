@@ -9,7 +9,7 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
-
+import { BiArrowToRight } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -67,8 +67,8 @@ function Home() {
 				<div className='relative pt-36 lg:pt-0'>
 					<h1
 						className={`text-white p-7 bg-gray-700 rounded-xl   lg:ps-80 text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold mb-5`}>
-						Hi, I'm Magdi. I teach people how to make the web and how to make it
-						look good while they're at it.
+						Hi, I'm Magdi. I'm a Front-End Developer focused on making a high-
+						performance web applications.
 					</h1>
 					<p
 						className={`mb-5 px-7 text-base sm:text-lg md:text-xl lg:text-2xl  lg:ps-80 font-medium ${
@@ -84,8 +84,8 @@ function Home() {
 							<a
 								href='https://drive.google.com/open?id=1esvR9c9E2tTyqudjyCEijZikUq77op2E&authuser=0'
 								target='blank'
-								className='text-blue-500'>
-								Resume
+								className='text-blue-500 gap-3   flex justify-sart items-center'>
+								<BiArrowToRight /> Resume
 							</a>
 						</div>
 					</p>

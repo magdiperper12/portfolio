@@ -10,66 +10,77 @@ function Projects() {
 			project: 'chat-bot',
 			image: 'https://bat-chat.surge.sh/',
 			url: 'https://bat-chat.surge.sh/',
+			github: 'https://github.com/magdiperper12/botbat',
 			text: 'Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks,Getsby , Hostinger, etc & used by thousands of developers globally  ',
 		},
 		{
 			project: 'Football-Historic',
 			image: 'https://historic.vercel.app',
 			url: 'https://historic.vercel.app',
+			github: 'https://github.com/magdiperper12/HistoricFootball',
 			text: 'by using next js , api , tailwind and typescript make this website have all information about football whith ai chating and fan zone and historic of all football club and player and you can see also place for shopping ',
 		},
 		{
 			project: 'Social Media',
 			image: 'https://social-midea.vercel.app/',
 			url: 'https://social-midea.vercel.app/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using next js , tailwind  and typescript make this website are a social media website that have all the feature of social media like post , comment , like  and followin  also have notification and stories ',
 		},
 		{
 			project: 'E-commerce',
-			image: 'https://historic.vercel.app/component/shop',
+			image: 'https://e-commerce-tau-flax.vercel.app/',
 			url: 'https://e-commerce-h3ex0he57-magdis-projects.vercel.app/',
+			github: 'https://github.com/magdiperper12/E-commerce',
 			text: 'by using next js , tailwind ,api  and typescript make this website are a e-commerce website that have all the feature of e-commerce like cart, payement,product and and shopping place ',
 		},
 		{
 			project: 'point-cursure',
 			image: 'https://point-cursure.surge.sh/',
 			url: 'https://point-cursure.surge.sh/',
+			github: 'https://github.com/magdiperper12/point-cursure',
 			text: 'by using html and css , vanilla javascript and react  making a point-cursure having animation and cursor effect',
 		},
 		{
 			project: 'batslide',
 			image: 'https://batslide.surge.sh/',
 			url: 'https://batslide.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html , css , vanilla javascript and react making a bat-slide with background image open on scrolling',
 		},
 		{
 			project: 'gallary-slide',
 			image: 'https://gallary-slide.surge.sh/',
 			url: 'https://gallary-slide.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript and react making a gallary-slide',
 		},
 		{
 			project: 'text-animation',
 			image: 'https://text-animation.surge.sh/',
 			url: 'https://text-animation.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html , css , vanilla javascript and react making text-animation with background image',
 		},
 		{
 			project: 'tech-village',
 			image: 'https://tech-village.surge.sh/',
 			url: 'https://tech-village.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making a website',
 		},
 		{
 			project: 'paralex-app',
 			image: 'https://paralex-app.surge.sh/',
 			url: 'https://paralex-app.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript and react making a paralex-app having animation and cursor effect',
 		},
 		{
 			project: 'chart-api-geo',
 			image: 'https://chart-api-geo.surge.sh/',
 			url: 'https://chart-api-geo.surge.sh/',
+			github: 'https://github.com/magdiperper12/api-chart',
 			text: 'by using html and css , vanilla javascript making a chart-api-geo',
 		},
 
@@ -77,30 +88,35 @@ function Projects() {
 			project: 'vanilla-js-calculator',
 			image: 'https://vanilla-javascript-calc.surge.sh/',
 			url: 'https://vanilla-javascript-calc.surge.sh/',
+			github: 'https://github.com/magdiperper12/vanilla-js-calculator',
 			text: 'by using html and css , vanilla javascript making an small calculator',
 		},
 		{
 			project: 'to-Do-List',
 			image: 'https://vanillajs-todolist.surge.sh/',
 			url: 'https://vanillajs-todolist.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making an small to-do-list',
 		},
 		{
 			project: 'vanilla-js-weather',
 			image: 'https://vanilla-js-weather.surge.sh/',
 			url: 'https://vanilla-js-weather.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making an small vanilla-js-weather',
 		},
 		{
 			project: 'social-app',
 			image: 'https://blog-social-app.surge.sh/',
 			url: 'https://blog-social-app.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making an small socialMedia-app',
 		},
 		{
 			project: 'vanilla-js-weather',
 			image: 'https://vanilla-js-weather.surge.sh/',
 			url: 'https://vanilla-js-weather.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making an small vanilla-js-weather',
 		},
 
@@ -108,6 +124,7 @@ function Projects() {
 			project: 'circle-slide',
 			image: 'https://circle-slide.surge.sh/',
 			url: 'https://circle-slide.surge.sh/',
+			github: 'https://github.com/magdiperper12/slide-circle',
 			text: 'by using html and css , vanilla javascript and react making a  circle-slide having animation ',
 		},
 
@@ -115,6 +132,7 @@ function Projects() {
 			project: 'code-edit',
 			image: 'https://code-edit.surge.sh/',
 			url: 'https://code-edit.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making a code-edit',
 		},
 
@@ -122,12 +140,14 @@ function Projects() {
 			project: 'responsive-dashboard',
 			image: 'https://responsive-dashboard.surge.sh/',
 			url: 'https://responsive-dashboard.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript   making a responsive-dashboard',
 		},
 		{
 			project: 'transelator',
 			image: 'https://transelator.surge.sh/',
 			url: 'https://transelator.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript   making a transelator',
 		},
 
@@ -135,6 +155,7 @@ function Projects() {
 			project: 'stopwatch-count',
 			image: 'https://stopwatch-count.surge.sh/',
 			url: 'https://stopwatch-count.surge.sh/',
+			github: 'https://github.com/magdiperper12/SocialMidea',
 			text: 'by using html and css , vanilla javascript making a stopwatch-count',
 		},
 	];
@@ -190,7 +211,7 @@ function Projects() {
 									Live <FaEye />
 								</a>
 								<a
-									href={project.url}
+									href={project.github}
 									target='_blank'
 									className={`text-sm sm:text-lg flex justify-start items-center md:text-lg font-semibold gap-2 py-2 px-7 rounded-lg duration-300 ${
 										darkMode
