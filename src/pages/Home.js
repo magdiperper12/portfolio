@@ -93,10 +93,10 @@ function Home() {
 						new career, I'm here to help.
 						<div>
 							<a
-								href='https://drive.google.com/open?id=1esvR9c9E2tTyqudjyCEijZikUq77op2E&authuser=0'
+								href='https://drive.google.com/file/d/1zyOQaaNB9BjVZTcdpqkzsFXAR8syJOFh/view'
 								target='blank'
 								className='text-blue-500 gap-3   flex justify-sart items-center'>
-								<BiArrowToRight /> Resume
+								<BiArrowToRight /> My_CV
 							</a>
 						</div>
 					</p>
